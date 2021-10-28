@@ -1,0 +1,251 @@
+body{
+    letter-spacing: -1px;
+    font-family: "Bebas", "Arial", "sans-serif";
+}
+
+.menu{
+    display: flex;
+    padding-left: 55px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom:1px solid rgb(184, 177, 177) ;
+}
+.li-menu{
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.logo{
+    width: 70px;
+    height: 60px;
+    padding-left:40px;
+    animation: doiMauMenu ease 3s infinite;
+}
+
+
+
+@keyframes doiMauMenu {
+    25%{
+        transform: scale(1.2);
+    }
+}
+.li-item.position{
+    position: relative;   
+}
+
+.items-position{
+    display: none;
+    position: absolute;
+    width: 200px;
+    left: -1px;
+    top: 54px;
+    background-color: white;
+}
+
+.item-position a{
+    text-decoration: none;
+    color: black;
+}
+.item-position a:hover{
+    text-decoration: none;
+    border-bottom:none ;
+}
+.li-item.position:hover .items-position {
+    display: block;
+    color: black;
+    border-bottom:none ;
+    border: 1px solid black;
+}
+.item-position{
+   padding-left: 7px;
+    padding-top:7px;
+    padding-bottom: 7px;
+}
+.item-position:hover{
+    
+    transform: skewX(-5deg);
+    transition: 0.3s;
+}
+
+.nav-bar li{
+    display: inline-block;
+    margin-top: -10px;
+    
+}
+
+.nav-bar-item {  
+    padding-left: 20px;
+    padding-right:20px ;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    text-decoration: none;
+    color: #0d7c7e;
+    font-size: 23px;
+    padding: 20px 32px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: none;
+}
+
+.li-item :hover{  
+    border-bottom:2px solid red ;
+    color: rgb(206, 64, 64);
+}
+
+
+
+
+.anhDaiDien{ 
+    width: 300px;
+    height: 400px;
+    border: 3px solid white;
+    margin-left: 90px;
+}
+.text-label{
+    position: absolute;
+    transform: rotate(-90deg);
+    /* background-color: black; */
+    color:white;
+    font-weight: 600;
+    top: 290px;
+    left: 50px;
+}
+.name-title{
+    margin-top: 15px;
+    margin-left: 120px;
+}
+.info-title{
+    text-align: center;
+    
+}
+.main-info{
+    display: flex;
+    margin-top: 50px;
+}
+.info{
+    
+    width: 70%;
+    margin-left: 100px;
+    border: 4px solid #0d7c7e;
+    border-radius: 5px;
+}
+table{
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right:50px ;
+}
+td{
+    overflow: hidden;
+    width:400px ;
+
+}
+
+.footer{
+    margin-top: 100px;
+    background-color: #fbfbfb;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.left-footer{
+    width: 40%;
+}
+.title-footer{
+    margin-top: 35px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+    
+}
+
+.detail-footer{
+    margin-top: 15px;
+    color: #989898;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    width: 70%;
+    margin-left: 80px;
+}
+.mid-footer{
+    width: 40%;
+}
+input[type=text] {
+    margin-left: 15px; ;
+    width: 300px;
+    padding: 12px 20px;
+    margin-top: 60px;
+    box-sizing: border-box;
+    border: 2px solid #0d7c7e;
+    border-radius: 4px;
+
+}
+.right-footer{
+    width: 20%;
+}
+
+.img-footer{
+    width: 100px;
+    margin-top: 50px;
+
+}
+.button-25{
+    margin-left: 15px;
+}
+
+/* CSS */ 
+/* Copy trên mạng */
+.button-25 {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  /* margin: 0; */
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 300px;
+}
+
+.button-25:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.button-25:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.button-25:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.button-25:disabled:active {
+  pointer-events: none;
+}
+
+.button-25:disabled:hover {
+  box-shadow: none;
+}
